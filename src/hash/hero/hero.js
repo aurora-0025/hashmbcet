@@ -25,6 +25,7 @@ function HashHero() {
         <div className="HashHero">
             <div className="heroSectionA">
                 {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
+               
                 <img src={HashLogo} className="logo"></img>
                 <div className="taglinecontainer">
                     <h3 className="tagline">

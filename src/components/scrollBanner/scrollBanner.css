@@ -1,0 +1,26 @@
+#bannerScroll {
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    display: block;
+    background-color: rgb(34, 24, 183);
+}
+
+#bannerScroll p {
+    position: absolute;
+    animation: mymove linear 10s infinite;
+    transition-timing-function: ease;
+    color: white;
+    padding: 5px;
+    height: 50px;
+    white-space: nowrap;
+}
+
+@keyframes mymove {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
