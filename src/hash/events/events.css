@@ -11,7 +11,7 @@
     padding: 21.07px 23.7037px 31.6049px;
     gap: 21.95px;
     isolation: isolate;
-
+    color: var(--witty-white);
     position: absolute;
     width: 300px;
     height: 400px;
@@ -20,4 +20,59 @@
     box-shadow: 0px 2.90233px 21.7675px rgba(151, 71, 255, 0.25), inset 0px -3.51166px 3.51166px rgba(238, 119, 139, 0.4),
         inset 0px 3.51166px 3.51166px rgba(255, 255, 255, 0.65), inset 0px 10.9739px 18.4362px rgba(255, 255, 255, 0.25);
     border-radius: 33.3608px;
+}
+
+.datecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 0px 16px;
+    gap: 16px;
+    height: fit-content;
+    background: #9747ff;
+    box-shadow: 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25), inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4),
+        inset 0px 2.06725px 2.06725px rgba(255, 255, 255, 0.65), inset 0px 6.46015px 10.8531px rgba(255, 255, 255, 0.25);
+    border-radius: 0px 8px;
+
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.timecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 16px;
+    height: fit-content;
+    background: #9747ff;
+    box-shadow: 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25), inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4),
+        inset 0px 2.06725px 2.06725px rgba(255, 255, 255, 0.65), inset 0px 6.46015px 10.8531px rgba(255, 255, 255, 0.25);
+    border-radius: 0px 8px;
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.datecontainer .date1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    background: #b565ff;
+    box-shadow: -7.14361px 0px 51.434px rgba(0, 0, 0, 0.25), 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25),
+        inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4), inset 0px 2.06725px 2.06725px rgba(255, 255, 255, 0.65),
+        inset 0px 6.46015px 10.8531px rgba(255, 255, 255, 0.25);
+    border-radius: 0px; 
+}
+
+.HashHero .datecontainer .datenumbers {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    /* height: 100%; */
+    font-weight: 500;
 }
