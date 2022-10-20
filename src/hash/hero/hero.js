@@ -3,10 +3,12 @@ import { BackgroundContext } from './../../App';
 import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import HashLogo from './../../assets/images/HashWordmark.svg';
+import WerbLogo from './../../assets/images/sponsors/werb.svg';
 import BackgroundImage from './../../assets/images/HashHeroBackground.png';
 import './hero.css';
 import HUIButton from '../../components/button/button';
 import ScrollBanner from '../../components/scrollBanner/scrollBanner';
+import HashCam from './../../assets/images/HashCam.png';
 
 function HashHero() {
     // const { ref, inView } = useInView({
@@ -25,8 +27,30 @@ function HashHero() {
     return (
         <div className="HashHero">
             {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
-            <ScrollBanner></ScrollBanner>
-            <div className="dateSponsorSection">.sponsorSection</div>
+            <ScrollBanner
+                content={
+                    <div className="scrollContentInstance">
+                        <p>#isHappening</p>
+                        <img src={HashCam} className="splitter" alt="" />
+                        <p>Competitions - Games - Workshops</p>
+                        <img src={HashCam} className="splitter" alt="" />
+                        <p>#isHappening</p>
+                    </div>
+                }
+            ></ScrollBanner>
+            <div className="spacer"></div>
+            <div className="dateSponsorSection">
+                <div className="sponsorLogo">
+                    <img src={WerbLogo} alt="" />
+                </div>
+                <div className="datecontainer">
+                    Nov
+                    <div className="datenumbers">
+                        <div className="date1">5</div>
+                        <div className="date2">6</div>
+                    </div>
+                </div>
+            </div>
             <img src={HashLogo} className="logo"></img>
             <br />
             <div className="taglinecontainer">

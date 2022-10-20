@@ -1,9 +1,10 @@
 .Hash .HashHero {
-    background: url('./../../assets/images/HashHeroBackground.png') var(--blinding-black);
+    background: url('./../../assets/images/HashHeroBG.png') var(--blinding-black);
     background-position: center;
     width: 100%;
     height: 100vh;
-    box-shadow: 0px 0px 0px 405px 0px var(--blinding-black) inset;
+    max-height: 800px;
+    box-shadow: 0px -150px 100px var(--blinding-black) inset;
     position: relative;
 }
 
@@ -68,13 +69,13 @@
     align-items: center;
 }
 
-.Hash .HashHero .datecontainer {
+/* .Hash .HashHero .datecontainer {
     background-color: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(50px);
     border-radius: 0 10px 10px 0;
     padding: 10px 20px;
     border-left: 5px var(--youthful-yellow) solid;
-}
+} */
 
 .Hash .HashHero .titlesponsor {
     font-family: 'coolvetica-rg';
@@ -90,39 +91,91 @@
     column-gap: 10px;
 }
 
+.Hash .HashHero .spacer {
+    height: 75px;
+}
+
+.HashHero .datecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 0px 16px;
+    gap: 16px;
+
+    background: #9747ff;
+    box-shadow: 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25), inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4),
+        inset 0px 2.06725px 2.06725px rgba(255, 255, 255, 0.65), inset 0px 6.46015px 10.8531px rgba(255, 255, 255, 0.25);
+    border-radius: 0px 8.7858px;
+
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.HashHero .datecontainer .date2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+
+    height: 100%;
+
+    background: #bf6fff;
+    box-shadow: -7.14361px 0px 51.434px rgba(0, 0, 0, 0.25), 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25),
+        inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4), inset 0px 2.06725px 2.06725px rgba(255, 255, 255, 0.65),
+        inset 0px 6.46015px 10.8531px rgba(255, 255, 255, 0.25);
+    border-radius: 0px 8.7858px 0px 0px;
+}
+
+.HashHero .datecontainer .date1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+
+    height: 100%;
+
+    background: #b565ff;
+    box-shadow: -7.14361px 0px 51.434px rgba(0, 0, 0, 0.25), 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25),
+        inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4), inset 0px 2.06725px 2.06725px rgba(255, 255, 255, 0.65),
+        inset 0px 6.46015px 10.8531px rgba(255, 255, 255, 0.25);
+    border-radius: 0px;
+}
+
+.HashHero .datecontainer .datenumbers {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    height: 100%;
+}
+
+.HashHero .dateSponsorSection {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.HashHero .sponsorLogo img {
+    height: 50px;
+    margin-left: -10px;
+}
+
 @media screen and (max-width: 768px) {
     .Hash .HashHero {
         /* background-color: aqua; */
         padding: 100px 50px;
-        margin-top: 20vh;
+        /* margin-top: 20vh; */
         flex-direction: column;
-    }
-
-    .Hash .HashHero .taglinecontainer {
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .Hash .HashHero .datecontainer {
-        width: 100%;
-        max-width: 150px;
-    }
-
-    .Hash .HashHero .heroSectionA {
-        order: 1;
-        display: inline-flex;
-        width: fit-content;
-        /* background-color: aquamarine; */
-    }
-
-    .Hash .HashHero .heroSectionB {
-        order: 0;
-        width: 50%;
-        transform: translate(0px);
+        box-shadow: 0px -350px 100px var(--blinding-black) inset;
     }
 
     .Hash .HashHero .buttonContainer {
         flex-direction: column;
+    }
+
+    .Hash .HashHero .datecontainer {
+        font-size: 18px;
     }
 }
 
@@ -130,5 +183,12 @@
     .HashHero {
         padding: 50px 25px;
         flex-direction: column;
+    }
+
+    .Hash .HashHero .taglinecontainer {
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 100%;
     }
 }

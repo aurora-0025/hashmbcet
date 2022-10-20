@@ -1,24 +1,49 @@
 #bannerScroll {
+    position: absolute;
     width: 100%;
-    height: 50px;
-    margin: 0px;
-    display: block;
-    background-color: rgb(34, 24, 183);
+    left: 0;
+    height: 35px;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bedazzling-blue);
+    color: var(--beurocratic-blue);
+    box-shadow: 0px 12.5px 21px 0px #ffffff40 inset, 0px 4px 4px 0px #ffffffa6 inset, 0px -4px 4px 0px #ee778b66 inset,
+        0px 3.305936098098755px 24.79452133178711px 0px #9747ff40;
 }
 
-#bannerScroll p {
+#bannerScroll .scrollContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 50px;
     position: absolute;
-    animation: mymove linear 10s infinite;
+    animation: mymove linear 20s infinite;
     transition-timing-function: ease;
-    color: white;
     padding: 5px;
-    height: 50px;
     white-space: nowrap;
+}
+
+#bannerScroll .scrollContentInstance {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.scrollContent p {
+    font-size: 24px;
+}
+
+.scrollContent .splitter {
+    width: 150px;
+    rotate: -30deg;
 }
 
 @keyframes mymove {
     0% {
-        left: 0%;
+        left: -100%;
     }
     100% {
         left: 100%;
