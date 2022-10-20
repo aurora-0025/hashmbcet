@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
     font-family: 'ClashDisplay-variable';
     text-align: start;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 
     cursor: url('./assets/images/HashCursorDefault.svg'), pointer;
@@ -33,13 +33,16 @@ body {
         z-index: 999;
     }
     /* Track */
-    .Define::-webkit-scrollbar-track {
-        background-color: var(--proud-pink);
+    ::-webkit-scrollbar-track {
     }
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: var(--youthful-yellow);
+        background-color: var(--bedazzling-blue);
+        border: none;
+        color: var(--beurocratic-blue) !important;
+        box-shadow: 12.5px 0px 21px 0px #ffffff40 inset, 4px 0px 4px 0px #ffffffa6 inset, -4px 0px 4px 0px #ee778b66 inset,
+            3.305936098098755px 0px 24.79452133178711px 0px #9747ff40;
     }
 }
 
@@ -159,4 +162,6 @@ p {
     --blasphemous-black: #25262c;
     --pretty-purple: #7b61ff;
     --blinding-black: #09060d;
+    --bedazzling-blue: #3fcdec;
+    --beurocratic-blue: #2a5a93;
 }

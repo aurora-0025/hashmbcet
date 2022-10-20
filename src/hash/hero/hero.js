@@ -23,17 +23,14 @@ function HashHero() {
 
     return (
         <div className="HashHero">
-            <div className="heroSectionA">
-                {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
-                <img src={HashLogo} className="logo"></img>
-                <div className="taglinecontainer">
-                    <h3 className="tagline">
-                        <span>build for the</span>
-                        <span className="youthfulYellowFG">
-                            <br /> real world.
-                        </span>
-                    </h3>
-                    <div className="datecontainer">
+            {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
+            <img src={HashLogo} className="logo"></img>
+            <br />
+            <div className="taglinecontainer">
+                <h3 className="tagline">
+                    Trancend <span className="bold"> Reality</span>
+                </h3>
+                {/* <div className="datecontainer">
                         <h3 className="tagline">
                             <span className="youthfulYellowFG">5 - 6</span>
                             <span>
@@ -41,20 +38,19 @@ function HashHero() {
                                 Nov
                             </span>
                         </h3>
-                    </div>
-                </div>
+                    </div> */}
                 <HUIButton
                     text="Grab Tickets"
                     icon="go"
                     event="hash"
                     type="primary"
-                    variant="1"
-                    color="var(--witty-white)"
-                    link="https://www.rebrand.ly/define_sponsorguide"
+                    variant="2"
+                    color="var(--beurocratic-blue)"
+                    // link="https://www.rebrand.ly/define_sponsorguide"
                 ></HUIButton>
-                <br />
             </div>
-            <div className="heroSectionB"></div>
+
+            <br />
         </div>
     );
 }

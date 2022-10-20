@@ -9,8 +9,9 @@
 
 .Hash .HashHero .logo {
     width: 100%;
-    max-width: 500px;
+    max-width: 1400px;
     min-width: 250px;
+    filter: drop-shadow(0px 3.305936098098755px 24.79452133178711px #9747ff);
 }
 
 .Hash .HashHero {
@@ -19,7 +20,7 @@
     color: var(--witty-white);
     /* min-height: 75vh; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 130px;
     align-items: center;
     row-gap: 20px;
@@ -51,10 +52,14 @@
 }
 
 .Hash .HashHero .tagline {
-    font-family: 'coolvetica-rg';
-    font-weight: 100;
-    letter-spacing: 0px !important;
+    font-weight: 400;
+    letter-spacing: 0px;
     text-align: left;
+    filter: drop-shadow(0px 3.305936098098755px 10.79452133178711px #9747ff);
+}
+
+.Hash .HashHero .tagline .bold {
+    font-weight: 600;
 }
 
 .Hash .HashHero .taglinecontainer {

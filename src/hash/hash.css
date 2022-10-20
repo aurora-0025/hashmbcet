@@ -1,3 +1,22 @@
 body {
     background-color: var(--blinding-black);
 }
+
+.wavyTexture {
+    background-image: url('./../assets/images/Wavy\ Texture.png');
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.noiseTexture {
+    background-image: url('./../assets/images/Noise\ Texture.png');
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: soft-light;
+    pointer-events: none;
+}
