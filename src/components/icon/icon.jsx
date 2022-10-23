@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import iconPath from './../../utils/iconData';
+import iconPath from '../../utils/iconData';
 
 const defaultStyles = { display: 'inline-block', verticalAlign: 'middle' };
 

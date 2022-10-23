@@ -1,15 +1,14 @@
-function EventCard() {
+function EventCard({ event }) {
     return (
         <div className="eventCard">
+            {event.name}
             <div className="datecontainer">
-                Nov
+                {event.date.month}
                 <div className="datenumbers">
-                    <div className="date1">5</div>
+                    <div className="date">{event.date.day}</div>
                 </div>
             </div>
-            <div className="timecontainer">
-                6pm
-            </div>
+            <div className="timecontainer">{event.time}</div>
         </div>
     );
 }

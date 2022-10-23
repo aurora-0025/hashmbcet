@@ -9,10 +9,9 @@ function Hash() {
         <div className="Hash">
             <div className="wavyTexture"></div>
             <div className="noiseTexture"></div>
-            <HashHero></HashHero>
-            {/* <HashAbout></HashAbout>
-            <HashHero></HashHero>; */}
-            <Events></Events>
+            <HashHero />
+            {/* <Events /> */}
+            {/* <HashAbout /> */}
         </div>
     );
 }

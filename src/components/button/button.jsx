@@ -1,5 +1,5 @@
 import './button.css';
-import Icon from './../icon/icon';
+import Icon from '../icon/icon';
 
 function HUIButton(props) {
     return props.link === undefined ? (
