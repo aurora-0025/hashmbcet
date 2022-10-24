@@ -1,6 +1,17 @@
 .events {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     background-color: var(--blinding-black);
+}
+
+.events > h1 {
+    margin: 44px 0 42px 0;
+    font-size: 100px;
+    line-height: 110%;
+    align-self: center;
+    color: #FFFFFF;
+    text-shadow: 0px 3.30594px 24.7945px rgba(151, 71, 255, 0.25);
 }
 
 .eventCard {
@@ -9,17 +20,21 @@
     justify-content: flex-end;
     align-items: center;
     padding: 21.07px 23.7037px 31.6049px;
-    gap: 21.95px;
     isolation: isolate;
     color: var(--witty-white);
-    position: absolute;
     width: 300px;
     height: 400px;
-
+    transform: scale(0.8);
     background: #9747ff;
     box-shadow: 0px 2.90233px 21.7675px rgba(151, 71, 255, 0.25), inset 0px -3.51166px 3.51166px rgba(238, 119, 139, 0.4),
         inset 0px 3.51166px 3.51166px rgba(255, 255, 255, 0.65), inset 0px 10.9739px 18.4362px rgba(255, 255, 255, 0.25);
     border-radius: 33.3608px;
+}
+
+.dateTimeContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .datecontainer {
@@ -27,7 +42,7 @@
     flex-direction: row;
     align-items: center;
     padding: 0px 0px 0px 16px;
-    gap: 16px;
+    gap: 14px;
     height: fit-content;
     background: #9747ff;
     box-shadow: 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25), inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4),
@@ -36,15 +51,15 @@
 
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .timecontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 16px;
-    gap: 16px;
+    padding: 10px 16px;
+    gap: 14px;
     height: fit-content;
     background: #9747ff;
     box-shadow: 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25), inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4),
@@ -53,7 +68,7 @@
 
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .datecontainer .date {
@@ -75,4 +90,25 @@
     padding: 0px;
     /* height: 100%; */
     font-weight: 500;
+}
+
+.eventdata {
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.eventname {
+    font-size: 22px;
+}
+
+.eventevent {
+    font-size: 20px;
+}
+
+.eventdescription {
+    margin-top: 10px;
+    margin-bottom: 14px;
+    font-size: 14px;
 }
