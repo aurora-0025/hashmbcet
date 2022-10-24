@@ -53,7 +53,7 @@ function HashHero() {
                     </div>
                 </div>
                 <br />
-                <img src={HashLogo} className="logo"></img>
+                <img src={HashLogo} className="logo" alt="logo"></img>
                 <br />
             </div>
             <div className="taglinecontainer">
