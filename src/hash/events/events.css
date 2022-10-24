@@ -6,8 +6,8 @@
 }
 
 .events > h1 {
-    margin: 44px 0 42px 0;
-    font-size: 100px;
+    margin: 44px 0 30px 0;
+    font-size: 6em;
     line-height: 110%;
     align-self: center;
     color: #FFFFFF;
@@ -17,13 +17,12 @@
 .eventCard {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
     padding: 21.07px 23.7037px 31.6049px;
     isolation: isolate;
     color: var(--witty-white);
     width: 300px;
-    height: 400px;
+    height: 450px;
     transform: scale(0.8);
     background: #9747ff;
     box-shadow: 0px 2.90233px 21.7675px rgba(151, 71, 255, 0.25), inset 0px -3.51166px 3.51166px rgba(238, 119, 139, 0.4),
@@ -31,7 +30,15 @@
     border-radius: 33.3608px;
 }
 
+.eventImage {
+    position: absolute;
+    top: -35%;
+    right: -100px;
+    transform: scale(0.7);
+}
+
 .dateTimeContainer {
+    margin-top: 165px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -51,7 +58,7 @@
 
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 1.7em;
 }
 
 .timecontainer {
@@ -68,7 +75,7 @@
 
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.7em;
 }
 
 .datecontainer .date {
@@ -96,19 +103,20 @@
     display: flex;    
     flex-direction: column;
     text-align: center;
-    margin: 10px 10px;
+    margin: 20px 10px 10px 10px;
 }
 
 .eventname {
-    font-size: 22px;
+    font-size: 1.5em;
 }
 
 .eventevent {
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 .eventdescription {
     margin-top: 10px;
     margin-bottom: 14px;
-    font-size: 14px;
+    text-align: left;
+    font-size: 1em;
 }

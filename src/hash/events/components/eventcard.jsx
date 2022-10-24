@@ -4,6 +4,7 @@ function EventCard({ event }) {
     return (
 
         <div className="eventCard">
+            <img src={event.image} alt={event.name} className="eventImage" />
             <div className="dateTimeContainer">
                 <div className="datecontainer">
                     {event.date.month}
@@ -15,7 +16,7 @@ function EventCard({ event }) {
             </div>
             <div className="eventdata">
                 <h3 className="eventname">{event.name}</h3>
-                <p className="eventevent"> {event.event}</p>
+                <p className="eventevent"> {event.eventType}</p>
                 <p className="eventdescription">{event.description}</p>
                 <HUIButton
                     text="Register Now"
@@ -24,7 +25,7 @@ function EventCard({ event }) {
                     type="primary"
                     variant="2"
                     color="var(--beurocratic-blue)"
-                    // link="https://www.rebrand.ly/define_sponsorguide"
+                    link={event.link}
                 ></HUIButton>
             </div>
         </div>

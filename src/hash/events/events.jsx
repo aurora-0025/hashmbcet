@@ -1,62 +1,72 @@
 import Carousel from '../../components/carousel/carousel';
 import EventCard from './components/eventcard';
 import './events.css';
-
+import gamepad from '../../assets/images/events/gamepad.png';
 
 function Events() {
     const events = [
         {
+            //TODO: Fix dates, time, description and images
             name: 'Define.',
-            event: 'Hackathon',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi' ,
+            eventType: 'Hackathon',
+            image: gamepad,
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi',
             date: {
                 day: 5,
                 month: 'nov',
             },
             time: '6:00PM',
+            link: 'https://define.hashmbcet.tech/',
         },
         {
             name: 'Rising',
-            event: 'Valorant Tournament',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi' ,
+            eventType: 'Valorant Tournament',
+            image: gamepad,
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi',
             date: {
                 day: 6,
                 month: 'nov',
             },
             time: '2:50PM',
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLScE0jBk4gvz3RwDfNUn-73nkOgQmcAjAsbZJpHTwzz7AyodtA/viewform',
         },
         {
             name: 'Battle of Codes',
-            event: 'Competitive Coding',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi' ,
+            eventType: 'Competitive Coding',
+            image: gamepad,
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi',
             date: {
                 day: 6,
                 month: 'nov',
             },
             time: '2:50PM',
-        },
-        {
-            name: 'Experia',
-            event: 'Project Expo',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi' ,
-            date: {
-                day: 6,
-                month: 'nov',
-            },
-            time: '2:50PM',
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfz3duZo4qQI7XgM5EnYKuvJVv569gdnWE6_4mrmVOer1p1pw/viewform',
         },
         {
             name: 'Spark',
-            event: 'Idea Presentation',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi' ,
+            eventType: 'Idea Presentation',
+            image: gamepad,
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi',
             date: {
                 day: 6,
                 month: 'nov',
             },
             time: '2:50PM',
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSeYAEFFwsMpCOLj1BDaQdJIMqvSI4diyX8pomUBP_Un6wI2pg/viewform',
+        },
+        {
+            name: 'Experia',
+            eventType: 'Project Expo',
+            image: gamepad,
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi',
+            date: {
+                day: 6,
+                month: 'nov',
+            },
+            time: '2:50PM',
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSdOourb47QerTfZ61DldPk1uAQP_Nk4Tl4wzetftuj5I2eLXQ/viewform',
         },
     ];
-
 
     return (
         <div className="events">

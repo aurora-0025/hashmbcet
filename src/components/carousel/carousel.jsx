@@ -9,6 +9,8 @@ function Carousel({children}) {
     dots: false,
     arrows: false,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     focusOnSelect: true,
     centerMode: true,
     speed: 500,
