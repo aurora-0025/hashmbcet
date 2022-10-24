@@ -1,39 +1,47 @@
 .events {
-    background-color: var(--blinding-black);
     display: flex;
-    flex-direction: row;
-    gap: 2em;
-    padding: 40px;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--blinding-black);
+}
+
+.events > h1 {
+    margin: 44px 0 30px 0;
+    font-size: 6em;
+    line-height: 110%;
+    align-self: center;
+    color: #FFFFFF;
+    text-shadow: 0px 3.30594px 24.7945px rgba(151, 71, 255, 0.25);
 }
 
 .eventCard {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 30px 15px;
-    gap: 21.95px;
+    padding: 21.07px 23.7037px 31.6049px;
     isolation: isolate;
     color: var(--witty-white);
     width: 300px;
-    height: 400px;
+    height: 450px;
+    transform: scale(0.8);
     background: #9747ff;
     box-shadow: 0px 2.90233px 21.7675px rgba(151, 71, 255, 0.25), inset 0px -3.51166px 3.51166px rgba(238, 119, 139, 0.4),
         inset 0px 3.51166px 3.51166px rgba(255, 255, 255, 0.65), inset 0px 10.9739px 18.4362px rgba(255, 255, 255, 0.25);
     border-radius: 33.3608px;
 }
 
-.eventCard h4 {
-    font-size: 1.7em;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+.eventImage {
+    position: absolute;
+    top: -35%;
+    right: -100px;
+    transform: scale(0.7);
 }
-.eventCard p {
-    font-size: 1.3em;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+
+.dateTimeContainer {
+    margin-top: 165px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .datecontainer {
@@ -41,7 +49,7 @@
     flex-direction: row;
     align-items: center;
     padding: 0px 0px 0px 16px;
-    gap: 16px;
+    gap: 14px;
     height: fit-content;
     background: #9747ff;
     box-shadow: 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25), inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4),
@@ -50,15 +58,15 @@
 
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 1.7em;
 }
 
 .timecontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 16px;
-    gap: 16px;
+    padding: 10px 16px;
+    gap: 14px;
     height: fit-content;
     background: #9747ff;
     box-shadow: 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25), inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4),
@@ -67,7 +75,7 @@
 
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.7em;
 }
 
 .datecontainer .date {
@@ -89,4 +97,26 @@
     padding: 0px;
     /* height: 100%; */
     font-weight: 500;
+}
+
+.eventdata {
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 10px 10px 10px;
+}
+
+.eventname {
+    font-size: 1.5em;
+}
+
+.eventevent {
+    font-size: 1.3em;
+}
+
+.eventdescription {
+    margin-top: 10px;
+    margin-bottom: 14px;
+    text-align: left;
+    font-size: 1em;
 }

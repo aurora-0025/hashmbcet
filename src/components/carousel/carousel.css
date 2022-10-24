@@ -1,0 +1,15 @@
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+}
+.slick-next {
+    right: 3% !important;
+    z-index: 1;
+}
+
+.slick-slider .slick-slide.slick-current,
+.slick-slider .slick-slide.slick-center {
+    display: block;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2);
+}
