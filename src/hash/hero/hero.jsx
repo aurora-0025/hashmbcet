@@ -1,5 +1,5 @@
 import LightBulbImage from './../../assets/images/defineLightBulbVideo.gif';
-import { BackgroundContext } from './../../App';
+import { BackgroundContext } from '../../App';
 import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import HashLogo from './../../assets/images/HashWordmark.svg';
@@ -56,7 +56,6 @@ function HashHero() {
                 <img src={HashLogo} className="logo"></img>
                 <br />
             </div>
-
             <div className="taglinecontainer">
                 <h3 className="tagline">
                     Trancend <span className="bold"> Reality</span>
