@@ -26,7 +26,6 @@ function HashHero() {
 
     return (
         <div className="HashHero">
-            {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
             <ScrollBanner
                 content={
                     <div className="scrollContentInstance">
@@ -34,25 +33,30 @@ function HashHero() {
                         <img src={HashCam} className="splitter" alt="" />
                         <p>Competitions - Games - Workshops</p>
                         <img src={HashCam} className="splitter" alt="" />
-                        <p>#isHappening</p>
                     </div>
                 }
             ></ScrollBanner>
+            {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
+
             <div className="spacer"></div>
-            <div className="dateSponsorSection">
-                <div className="sponsorLogo">
-                    <img src={WerbLogo} alt="" />
-                </div>
-                <div className="datecontainer">
-                    Nov
-                    <div className="datenumbers">
-                        <div className="date1">5</div>
-                        <div className="date2">6</div>
+            <div className="logoDateSponsor">
+                <div className="dateSponsorSection">
+                    <div className="sponsorLogo">
+                        <img src={WerbLogo} alt="" />
+                    </div>
+                    <div className="datecontainer">
+                        Nov
+                        <div className="datenumbers">
+                            <div className="date1">5</div>
+                            <div className="date2">6</div>
+                        </div>
                     </div>
                 </div>
+                <br />
+                <img src={HashLogo} className="logo"></img>
+                <br />
             </div>
-            <img src={HashLogo} className="logo"></img>
-            <br />
+
             <div className="taglinecontainer">
                 <h3 className="tagline">
                     Trancend <span className="bold"> Reality</span>

@@ -14,15 +14,15 @@
 }
 
 #bannerScroll .scrollContent {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 50px;
-    position: absolute;
-    animation: mymove linear 20s infinite;
+    column-gap: 0px;
     transition-timing-function: ease;
     padding: 5px;
     white-space: nowrap;
+    width: 100%;
 }
 
 #bannerScroll .scrollContentInstance {
@@ -30,6 +30,11 @@
     flex-direction: row;
     align-items: center;
     column-gap: 50px;
+    animation: mymove linear 30s infinite;
+}
+
+#bannerScroll .scrollContent:hover > .scrollContentInstance {
+    animation-play-state: paused;
 }
 
 .scrollContent p {
@@ -43,9 +48,11 @@
 
 @keyframes mymove {
     0% {
-        left: -100%;
+        transform: translateX(-100%);
+        order: 2;
     }
     100% {
-        left: 100%;
+        transform: translateX(100%);
+        order: 1;
     }
 }

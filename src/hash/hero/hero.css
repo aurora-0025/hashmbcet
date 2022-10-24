@@ -1,16 +1,18 @@
 .Hash .HashHero {
     background: url('./../../assets/images/HashHeroBG.png') var(--blinding-black);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
-    max-height: 800px;
+    /* max-height: 800px; */
     box-shadow: 0px -150px 100px var(--blinding-black) inset;
     position: relative;
 }
 
 .Hash .HashHero .logo {
-    width: 100%;
-    max-width: 1400px;
+    width: 80vw;
+    /* max-width: 1400px; */
     min-width: 250px;
     filter: drop-shadow(0px 3.305936098098755px 24.79452133178711px #9747ff);
 }
@@ -126,6 +128,13 @@
     border-radius: 0px 8px 0px 0px;
 }
 
+.HashHero .datecontainer .date1:hover,
+.HashHero .datecontainer .date2:hover {
+    background-color: var(--witty-white);
+    color: #9747ff;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .HashHero .datecontainer .date1 {
     display: flex;
     flex-direction: row;
@@ -152,6 +161,11 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+}
+
+.HashHero .logoDateSponsor {
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .HashHero .sponsorLogo img {
