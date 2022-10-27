@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin-bottom: 100px;
     background-color: var(--blinding-black);
 }
 
@@ -24,9 +25,9 @@
     width: 300px;
     height: 450px;
     transform: scale(0.8);
-    background: #9747ff;
-    box-shadow: 0px 2.90233px 21.7675px rgba(151, 71, 255, 0.25), inset 0px -3.51166px 3.51166px rgba(238, 119, 139, 0.4),
-        inset 0px 3.51166px 3.51166px rgba(255, 255, 255, 0.65), inset 0px 10.9739px 18.4362px rgba(255, 255, 255, 0.25);
+    background: #7929E1;
+    opacity: 0.7;
+    box-shadow: 0px 2.19035px 16.4276px rgba(151, 71, 255, 0.25), inset 0px -2.65021px 2.65021px rgba(238, 119, 139, 0.4), inset 0px 2.65021px 2.65021px rgba(255, 255, 255, 0.65), inset 0px 8.28189px 13.9136px rgba(255, 255, 255, 0.25);
     border-radius: 33.3608px;
 }
 
@@ -55,7 +56,6 @@
     box-shadow: 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25), inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4),
         inset 0px 2.06725px 2.06725px rgba(255, 255, 255, 0.65), inset 0px 6.46015px 10.8531px rgba(255, 255, 255, 0.25);
     border-radius: 0px 8px;
-
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.7em;
@@ -72,7 +72,6 @@
     box-shadow: 0px 1.70855px 12.8141px rgba(151, 71, 255, 0.25), inset 0px -2.06725px 2.06725px rgba(238, 119, 139, 0.4),
         inset 0px 2.06725px 2.06725px rgba(255, 255, 255, 0.65), inset 0px 6.46015px 10.8531px rgba(255, 255, 255, 0.25);
     border-radius: 0px 8px;
-
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.7em;
@@ -119,4 +118,31 @@
     margin-bottom: 14px;
     text-align: left;
     font-size: 1em;
+}
+
+/* Center card styling */
+.slick-slider .slick-slide.slick-center .eventCard  {
+    background: #9747FF;
+    opacity: 1;
+    box-shadow: 0px 2.90233px 21.7675px rgba(151, 71, 255, 0.25), inset 0px -3.51166px 3.51166px rgba(238, 119, 139, 0.4), inset 0px 3.51166px 3.51166px rgba(255, 255, 255, 0.65), inset 0px 10.9739px 18.4362px rgba(255, 255, 255, 0.25);
+}
+
+@keyframes subtleBounce {
+    0% {
+        transform: translateY(0px) scale(0.7) rotate(-2deg);   
+    }
+    33% {
+        transform: translateY(-10px) scale(0.72) rotate(2deg);   
+    }
+    66% {
+        transform: translateY(5px) scale(0.72) rotate(2deg);   
+    }
+    100% {
+        transform: translateY(0px) scale(0.7) rotate(-2deg);
+    }
+}
+
+/* Center card image styling */
+.slick-slider .slick-slide.slick-center .eventImage  {
+    animation: subtleBounce 5s infinite linear;
 }
