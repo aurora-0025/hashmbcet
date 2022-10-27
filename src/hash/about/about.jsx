@@ -1,9 +1,10 @@
 import './../about/about.css';
 import './../../index.css';
-import HashAudience from './../../assets/images/HashAudience.svg';
+import HashAudience from './../../assets/images/HashAudience.png';
 import React, { useContext } from 'react';
 // import { BackgroundContext } from '../hash';
 import { useInView } from 'react-intersection-observer';
+import ImagePill from '../components/imagepill';
 
 function HashAbout() {
     return (
@@ -26,8 +27,14 @@ function HashAbout() {
                 </p>
             </div>
             <div className="heroSectionB">
-                <div className="mask"></div>
-                <img src={HashAudience} alt="" />
+                <div className="heroImageMarqeeCol1">
+                    <ImagePill src={HashAudience}/>
+                    <ImagePill src={HashAudience}/>
+                </div>
+                <div className="heroImageMarqeeCol2">
+                    <ImagePill src={HashAudience}/>
+                    <ImagePill src={HashAudience}/>
+                </div>
             </div>
         </div>
     );
