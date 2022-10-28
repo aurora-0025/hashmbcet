@@ -20,10 +20,6 @@ function HashFooter() {
                         <a href="https://twitter.com/" className="socialIcons">
                             <i className="fa fa-twitter" />
                         </a>
-                        <a href="https://www.linkedin.com/" className="socialIcons">
-                            <i className="fa fa-linkedin" />
-                        </a>
-
                         <a href="https://www.instagram.com/hashmbcet/" className="socialIcons">
                             <i className="fa fa-instagram" />
                         </a>

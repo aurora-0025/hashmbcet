@@ -16,7 +16,7 @@ function Carousel({children}) {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerPadding: '15%',
+    centerPadding: '0%',
     responsive: [
       {
         breakpoint: 1024,
@@ -36,6 +36,15 @@ function Carousel({children}) {
         }
       },
       {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '28%',
+        }
+      },
+      {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
@@ -50,7 +59,7 @@ function Carousel({children}) {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '15%',
+          centerPadding: '13%',
         }
       },
       {
@@ -68,7 +77,7 @@ function Carousel({children}) {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '0%',
+          centerPadding: '20%',
         }
       }
     ]

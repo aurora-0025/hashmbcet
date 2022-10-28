@@ -138,8 +138,8 @@
     .heroSectionB {
         display: none;
     }
-    .hashAbout > h2 {
-        font-size: 12vw;
+    .heroSectionA > h2 {
+        font-size: 11vw;
     }
     .hashAbout .subheading {
         font-size: 10vw;

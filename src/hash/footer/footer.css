@@ -24,7 +24,7 @@ footer {
     height: 100%;
   }
   .footerContentLeft, .footerContentRight {
-    padding: 20px 20px;
+    padding: 40px 40px;
   } 
 
   .footerContentLeft {
@@ -59,7 +59,7 @@ footer {
     /* width: 100px !important;
     line-height: 100px !important;
     height: 100px !important; */
-    padding: 15px;
+    padding: 7px;
     border: 2px solid var(--witty-white);
     border-radius: 100%;
     text-decoration: none;
@@ -94,11 +94,8 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 31px 28px;
+    padding: 10px 28px;
     gap: 21px;
-
-    height: 103.36px;
-
     background: #3FCDEC;
     color: #2A5A93;
     border: 1px solid #7B61FF;
@@ -107,6 +104,12 @@ footer {
 
   .footerBanner > div {
     height: 100%;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .footerBanner p {
+    font-size: 2.5vw
   }
 
   .footerBanner .developedBy {
