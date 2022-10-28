@@ -27,13 +27,15 @@ function HashAbout() {
                 </p>
             </div>
             <div className="heroSectionB">
-                <div className="heroImageMarqeeCol1">
-                    <ImagePill src={HashAudience}/>
-                    <ImagePill src={HashAudience}/>
-                </div>
-                <div className="heroImageMarqeeCol2">
-                    <ImagePill src={HashAudience}/>
-                    <ImagePill src={HashAudience}/>
+                <div className="marqeeWrapper">
+                    <div className="heroImageMarqeeCol1">
+                        <ImagePill src={HashAudience}/>
+                        <ImagePill src={HashAudience}/>
+                    </div>
+                    <div className="heroImageMarqeeCol2">
+                        <ImagePill src={HashAudience}/>
+                        <ImagePill src={HashAudience}/>
+                    </div>
                 </div>
             </div>
         </div>

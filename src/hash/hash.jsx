@@ -3,6 +3,7 @@ import HashAbout from './about/about';
 import Events from './events/events';
 import './hash.css';
 import ScrollBanner from '../components/scrollBanner/scrollBanner';
+import HashFooter from './footer/footer';
 
 function Hash() {
     return (
@@ -16,6 +17,7 @@ function Hash() {
             {/* <HashAbout></HashAbout>
             <HashHero></HashHero>; */}
             <Events></Events>
+            <HashFooter></HashFooter>
         </div>
     );
 }
