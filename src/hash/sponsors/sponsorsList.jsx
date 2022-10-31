@@ -117,14 +117,14 @@ function DefineSponsorsList() {
 
         for (const e of data) {
             if (e.type === precedenceOrder[i]) {
-                if (e.imagePath !== undefined) tempList.push(<SponsorItem {...e}></SponsorItem>);
+                if (e.imagePath !== undefined) tempList.push(<SponsorItem key={`${e.imageKey}`} {...e}></SponsorItem>);
             }
         }
 
         if (tempList.length !== 0) {
-            listFull.push(<h3>{displayText[i]}</h3>);
-            listFull.push(<div className="sponsorTier">{tempList}</div>);
-            listFull.push(<DefineSeperator />);
+            listFull.push(<h3 key={`${displayText[i]}_name`}>{displayText[i]}</h3>);
+            listFull.push(<div key={`${displayText[i]}_tier`} className="sponsorTier">{tempList}</div>);
+            listFull.push(<DefineSeperator key={`${displayText[i]}_seperator`} />);
         }
     }
 
