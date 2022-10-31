@@ -3,12 +3,12 @@ import { BackgroundContext } from '../../App';
 import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import HashLogo from './../../assets/images/HashWordmark.svg';
-import WerbLogo from './../../assets/images/sponsors/werb.svg';
 import BackgroundImage from './../../assets/images/HashHeroBackground.png';
 import './hero.css';
 import HUIButton from '../../components/button/button';
 import ScrollBanner from '../../components/scrollBanner/scrollBanner';
 import HashCam from './../../assets/images/HashCam.png';
+import { ReactComponent as WerbLogo } from './../../assets/images/sponsors/werb.svg';
 
 function HashHero() {
     // const { ref, inView } = useInView({
@@ -42,7 +42,7 @@ function HashHero() {
             <div className="logoDateSponsor">
                 <div className="dateSponsorSection">
                     <div className="sponsorLogo">
-                        <img src={WerbLogo} alt="" />
+                        <WerbLogo className="werbLogo" alt="" />
                     </div>
                     <div className="datecontainer">
                         Nov
@@ -58,7 +58,7 @@ function HashHero() {
             </div>
             <div className="taglinecontainer">
                 <h3 className="tagline">
-                    Trancend <span className="bold"> Reality</span>
+                    Transcend <span className="bold"> Reality</span>
                 </h3>
                 {/* <div className="datecontainer">
                         <h3 className="tagline">

@@ -1,7 +1,7 @@
 import "./seperator.css";
 
-function DefineSeperator() {
-	return <div className="defineSeperator"></div>;
+function HashSeperator() {
+	return <div className="hashSeperator"></div>;
 }
 
-export default DefineSeperator;
+export default HashSeperator;

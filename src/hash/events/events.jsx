@@ -70,15 +70,19 @@ function Events() {
 
     return (
         <div className="events">
-            <h1>Here's How.</h1>
-            <div>
-                <Carousel>
-                    {events.map((e) => (
-                        <div>
-                            <EventCard event={e} />
-                        </div>
-                    ))}
-                </Carousel>
+            <div className="heading">
+                <h1>Here's How.</h1>
+            </div>
+            <div className="carousel-wrapper">
+                <div>
+                    <Carousel>
+                        {events.map((e, index) => (
+                            <div key={index}>
+                                <EventCard event={e} />
+                            </div>
+                        ))}
+                    </Carousel>
+                </div>
             </div>
         </div>
     );
