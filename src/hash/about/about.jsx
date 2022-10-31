@@ -1,10 +1,9 @@
 import './../about/about.css';
 import './../../index.css';
 import HashAudience from './../../assets/images/HashAudience.png';
-import React, { useContext } from 'react';
+import React from 'react';
 // import { BackgroundContext } from '../hash';
-import { useInView } from 'react-intersection-observer';
-import ImagePill from '../components/imagepill';
+import ImagePill from './components/imagepill';
 
 function HashAbout() {
     return (

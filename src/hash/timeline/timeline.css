@@ -1,0 +1,76 @@
+.HashTimeline {
+    width: 100%;
+    color: var(--witty-white);
+    /* max-height: 800px; */
+    box-shadow: 0px -150px 100px var(--blinding-black) inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.timelineContainer {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.timeline {
+    min-height: 100%;
+    background: var(----blasphemous-black);
+    position:relative;
+}
+
+.timelineProgress {
+    -webkit-mask:linear-gradient(#fff 0 0);
+    mask:linear-gradient(#fff 0 0);
+    transition: height 1s ease-in-out;
+}
+
+.timelineProgress::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image: linear-gradient(191.11deg,  #6324EB 36.67%, #9747FF 53.27%, #3FCDEC 77.51%);
+}
+
+.timelineEvents {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.TimelineEvent {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+}
+
+.TimelineEvent .eventContainer {
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    gap: 20px;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+.activePoint {
+    width: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--witty-white);
+    box-shadow: 0px 0px 10px 5px var(--pretty-purple);
+}

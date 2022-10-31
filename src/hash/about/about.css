@@ -1,7 +1,7 @@
 .hashAbout {
     padding: 20px 100px;
     color: var(--witty-white);
-    height: 100vh;
+    height: max(100vh, 800px);
     display: flex;
     flex-direction: row;
     align-items: center;

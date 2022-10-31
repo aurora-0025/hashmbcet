@@ -1,9 +1,9 @@
 .events {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin-bottom: 100px;
+    height: max(100vh, 500px);
     background-color: var(--blinding-black);
+    margin: 100px 0;
 }
 
 .events > .heading {
