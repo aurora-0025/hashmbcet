@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import './timeline.css';
 import TimelineEvent from './components/timelineevent';
@@ -30,18 +30,6 @@ function Timeline() {
         },
     ]
 
-    const [buttonText, setButtonText] = useState("ON");
-
-    function buttonClick() {
-        if(buttonText == "ON")
-            setButtonText("OFF");
-        else setButtonText("ON");
-    }
-
-    useEffect(()=> {
-        console.log(completed);
-    }, [completed])
-
     const timelineStyle = {
         width: '15px',
         borderRadius: 50,
@@ -64,7 +52,7 @@ function Timeline() {
                     <div style={timelineProgressStyle} className="timelineProgress"></div>
                 </div>
                 <div className="timelineEvents">
-                    {data.map((evnt, index)=> <TimelineEvent total={data.length} index={index} setCompleted={setCompleted} {...evnt} />
+                    {data.map((evnt, index)=> <TimelineEvent key={index} total={data.length} index={index} setCompleted={setCompleted} {...evnt} />
                     )}
                 </div>
             </div>

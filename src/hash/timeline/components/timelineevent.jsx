@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 function TimelineEvent({total, index, setCompleted, name, time}) {
 
-    const { ref, inView, entry } = useInView({
+    const { ref, inView } = useInView({
         /* Optional options */
         threshold: 0,
         triggerOnce: true,
@@ -14,7 +14,7 @@ function TimelineEvent({total, index, setCompleted, name, time}) {
       if(inView) {
         setCompleted((((index + 1)/total)*100));
       }
-    }, [inView])
+    }, [inView, setCompleted, total, index])
 
   return (
     <div className="TimelineEvent">
