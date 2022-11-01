@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-function TimelineEvent({total, index, setCompleted, name, time}) {
+function TimelineEvent({total, index, setCompleted, name, time, description}) {
 
     const { ref, inView } = useInView({
         /* Optional options */
@@ -23,9 +23,9 @@ function TimelineEvent({total, index, setCompleted, name, time}) {
           <div className="activePoint"></div>
         </div>
         <div className='detailsContainer' style={{opacity: inView ? "1" : "0", transition: "all 1s ease-in-out", transitionDelay: "0.5s"}}>
-          <div className="time">{time}</div>
+          <h4 className="time">{time}</h4>
           <h3>{name}</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>{description}</p>
         </div>
       </div>
     </div>

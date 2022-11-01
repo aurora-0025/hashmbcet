@@ -10,7 +10,7 @@ function DefineSponsors() {
     });
 
     return (
-        <div className="defineSponsors" ref={ref}>
+        <div className="defineSponsors" id="sponsors" ref={ref}>
             <div className="sponsorContainer">
                 {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
                 <h2 className="mainheading">meet our</h2>
