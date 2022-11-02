@@ -172,17 +172,9 @@
 .HashHero .sponsorLogo .werbLogo {
     margin-bottom: -20px;
     margin-left: -10px;
-    height: 100px;
-    width: 150px;
+    width: 100px;
+    filter: drop-shadow(0px 3.305936098098755px 10.79452133178711px #9747ff);
 }
-
-  .sponsorLogo .werbLogo path {
-    fill: #ffffff;
-  }
-
-  .sponsorLogo  .werbLogo {
-    stroke: #9747ff;
-  }
 
 
 @media screen and (max-width: 768px) {

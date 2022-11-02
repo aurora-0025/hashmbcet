@@ -49,10 +49,6 @@ function HashFooter() {
             <div>   
                 <p>@HASH22</p>
             </div>
-            <div className='developedBy'>
-                <p>Developed by</p>
-                <WerbLogo className='werbIcon'/>
-            </div>
         </div>
     </footer>
   )
