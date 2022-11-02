@@ -7,6 +7,7 @@ function ScrollBanner(props) {
             <div className="scrollContent">
                 {props.content}
                 {props.content}
+
             </div>
         </div>
     );
