@@ -15,7 +15,7 @@ function Events() {
             //TODO: Fix dates, time, description and images
             name: 'Define.',
             eventType: 'Hackathon',
-            image: battleofcodes,
+            image:battleofcodes,
             description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias atque eligendi',
             date: {
                 day: 5,
