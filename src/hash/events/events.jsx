@@ -24,18 +24,6 @@ function Events() {
             link: 'https://define.hashmbcet.tech/',
         },
         {
-            name: 'Rising',
-            eventType: 'Valorant Tournament',
-            image: gamepad,
-            description: 'Show your talents at Valorant. As a squad of five, come and join this gaming experience! Register now.',
-            date: {
-                day: 6,
-                month: 'nov',
-            },
-            time: '2:50PM',
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLScE0jBk4gvz3RwDfNUn-73nkOgQmcAjAsbZJpHTwzz7AyodtA/viewform',
-        },
-        {
             name: 'Tech Hunter',
             eventType: 'Treasure Hunt Contest',
             image: techhunter,
