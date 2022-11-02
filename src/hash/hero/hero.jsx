@@ -13,7 +13,7 @@ function HashHero() {
                     <div className="scrollContentInstance">
                         <p>#isHappening</p>
                         <img src={HashCam} className="splitter" alt="" />
-                        <p>Competitions - Games - Workshops</p>
+                        <p>Competitions - Games - Exhibitions</p>
                         <img src={HashCam} className="splitter" alt="" />
                     </div>
                 }
