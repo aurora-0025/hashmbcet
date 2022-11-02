@@ -8,25 +8,30 @@ function Timeline() {
 
     var data = [
         {
-            name: "Inaugration",
-            time: "8:00",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugiat quas nihil id consectetur beatae"
+            name: "Kick Off",
+            time: "9:00AM",
+            description: "Futsal Tournament"
         },
         {
-            name: "Hello",
-            time: "8:00"
+            name: "Spark",
+            time: "10:00AM - 12:00PM",
+            description: "Idea Presentation"
         },
         {
-            name: "Hello",
-            time: "8:00"
+            name: "Battle Of Codes",
+            time: "10:30AM - 12:30PM",
+            description: "Competitive Coding"
         },
         {
-            name: "Hello",
-            time: "8:00"
+            name: "Experia",
+            time: "2:00PM - 4:00PM",
+            description: "Project Expo"
+
         },
         {
-            name: "Hello",
-            time: "8:00"
+            name: "Tech Hunter",
+            time: "3:00PM - 5:00PM",
+            description: "Treasure Hunt Contest"
         },
     ]
 
@@ -45,7 +50,7 @@ function Timeline() {
 
 
     return (
-        <div className="HashTimeline">
+        <div className="HashTimeline" id="timeline">
             <h2>Timeline</h2>
             <div className="timelineContainer">
                 <div className="timeline" style={timelineStyle}>

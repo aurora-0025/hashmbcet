@@ -69,7 +69,7 @@ function Events() {
     ];
 
     return (
-        <div className="events">
+        <div className="events" id="events">
             <div className="heading">
                 <h1>Here's How.</h1>
             </div>

@@ -31,7 +31,18 @@ function HashFooter() {
             </div>
             <div className="footerContentRight">
                 <h2 className="subheading">Quick Links</h2>
-                <a className="description">Events</a>
+                <p className="footerLink" onClick={() => {
+                const anchor = document.querySelector('#events');
+                anchor?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                }}>Events</p>
+                <p className="footerLink" onClick={() => {
+                const anchor = document.querySelector('#timeline');
+                anchor?.scrollIntoView({ behavior: 'smooth'})
+                }}>Timeline</p>
+                <p className="footerLink" onClick={() => {
+                const anchor = document.querySelector('#sponsors');
+                anchor?.scrollIntoView({ behavior: 'smooth'})
+                }}>Sponsors</p>
             </div>
         </div>
         <div className="footerBanner">
