@@ -48,8 +48,11 @@
 
 .eventImage {
     position: absolute;
-    top: -35%;
-    right: -100px;
+    top:-10%;
+    right: 0%;
+    bottom: 90%;
+    width: 300px;
+    height: 300px;
     transform: scale(0.7);
 }
 
