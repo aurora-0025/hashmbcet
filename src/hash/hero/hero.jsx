@@ -3,7 +3,7 @@ import './hero.css';
 import HUIButton from '../../components/button/button';
 import ScrollBanner from '../../components/scrollBanner/scrollBanner';
 import HashCam from './../../assets/images/HashCam.png';
-import { ReactComponent as WerbLogo } from './../../assets/images/sponsors/werb.svg';
+import MMCETAALogo from './../../assets/images/sponsors/MBCETAA.png';
 
 function HashHero() {
     return (
@@ -23,7 +23,7 @@ function HashHero() {
             <div className="logoDateSponsor">
                 <div className="dateSponsorSection">
                     <div className="sponsorLogo">
-                        <WerbLogo className="werbLogo" alt="" />
+                        <img src={MMCETAALogo} className="werbLogo" alt="" />
                     </div>
                     <div className="datecontainer">
                         Nov
@@ -41,7 +41,7 @@ function HashHero() {
                 <h3 className="tagline">
                     Transcend <span className="bold"> Reality</span>
                 </h3>
-                <HUIButton
+                {/* <HUIButton
                     text="Grab Tickets"
                     icon="go"
                     event="hash"
@@ -49,7 +49,7 @@ function HashHero() {
                     variant="2"
                     color="var(--beurocratic-blue)"
                     // link="https://www.rebrand.ly/define_sponsorguide"
-                ></HUIButton>
+                ></HUIButton> */}
             </div>
 
             <br />

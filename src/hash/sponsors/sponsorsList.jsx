@@ -51,10 +51,16 @@ var data = [
         type: 'education',
     },
     {
+        imageKey: 'MBCETAA',
+        imagePath: 'MBCETAA.png',
+        URL: '',
+        type: 'title',
+    },
+    {
         imageKey: 'ClusterDev',
         imagePath: 'clusterdev-logo.svg',
         URL: 'https://clusterdev.com/',
-        type: 'title',
+        type: 'platinum',
     },
     {
         imageKey: 'Balsamiq',
