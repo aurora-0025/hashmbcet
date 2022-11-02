@@ -87,7 +87,7 @@ function Events() {
             name: 'Kick Off',
             eventType: 'Futsal Tournament',
             image: footsal,
-            description: 'Flaunt the pioneer in you and show the world what you&rsquo;ve been working on.',
+            description: 'To fans who live and breathe football, the moment you have been waiting for is here. Pass on the ball and let your legs do the talking.',
             date: {
                 day: 5,
                 month: 'nov',
